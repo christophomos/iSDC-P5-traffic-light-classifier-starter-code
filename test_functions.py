@@ -1,22 +1,13 @@
 # All test code
 import unittest
-from IPython.display import Markdown, display
-
-
-
-# Helper functions for printing markdown text (text in color/bold/etc)
-def printmd(string):
-    display(Markdown(string))
 
 # Print a test failed message, given an error
 def print_fail():
-    printmd('**<span style="color: red;">TEST FAILED</span>**')    
+    print('TEST FAILED')
     
 # Print a test passed message
 def print_pass():
-    printmd('**<span style="color: green;">TEST PASSED</span>**')
-    
-
+    print('TEST PASSED')
 
 # A class holding all tests
 class Tests(unittest.TestCase):
