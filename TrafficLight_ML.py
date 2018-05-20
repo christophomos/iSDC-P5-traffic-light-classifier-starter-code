@@ -69,6 +69,8 @@ def display_all(image_list):
 # Remove [:2] to see all
 #display_all(sample_red)
 
+# Got the idea to use logistic regression from the following website
+# https://www.codementor.io/mgalarny/making-your-first-machine-learning-classifier-in-scikit-learn-python-db7d7iqdh
 from sklearn.linear_model import LogisticRegression
 
 classifier = LogisticRegression()

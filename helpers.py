@@ -66,6 +66,17 @@ def one_hot_to_ordinal(label):
     else:
         raise ValueError('{} is not a valid image label'.format(label))
 
+def ordinal_to_one_hot(label):
+    # Create a one-hot encoded label that works for all classes of traffic lights
+    if label == 0:
+        return [1, 0, 0]
+    elif label == 1:
+        return [0, 0, 1]
+    elif label == 2:
+        return [0, 1, 0]
+    else:
+        raise ValueError('{} is not a valid image label'.format(label))
+
 def standardize(image_list):
     # Empty image data array
     standard_list = []
