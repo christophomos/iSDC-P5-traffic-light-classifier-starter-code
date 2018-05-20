@@ -9,11 +9,10 @@ import cv2 # computer vision library
 # This function loads in images and their labels and places them in a list
 # The list contains all images and their associated labels
 # For example, after data is loaded, im_list[0][:] will be the first image-label pair in the list
-def load_dataset(image_dir):
+def load_dataset(image_dir, image_types = ["red", "yellow", "green"]):
     
     # Populate this empty image list
     im_list = []
-    image_types = ["red", "yellow", "green"]
     
     # Iterate through each color folder
     for im_type in image_types:
